@@ -1,0 +1,348 @@
+.wrap {
+    position: relative;
+    padding: 2%;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.chart {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+span.center {
+    background: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    /* height: 600px; */
+    outline: 1px solid #333;
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background: transparent;
+    display: flex;
+}
+
+img {
+    width: 300px;
+}
+
+.text1 {
+    color: #000;
+}
+
+.orange {
+    color: orange;
+}
+
+.pink {
+    color: pink;
+}
+
+
+
+
+
+
+.st0 {
+    fill: #662B97;
+    stroke: #662B97;
+    stroke-dasharray: 1800;
+    opacity: 1;
+    animation: animate0 4s ease-in 1;
+    animation-fill-mode: both;
+}
+
+.st2 {
+    fill: #121212;
+    stroke: #121212;
+    stroke-dasharray: 1800;
+    opacity: 1;
+    animation: animate1 3s ease-in 1;
+    animation-fill-mode: both;
+}
+
+.st3 {
+    fill: #4DC3C3;
+    stroke: #4DC3C3;
+    stroke-dasharray: 1800;
+    opacity: 1;
+    animation: animate2 4s ease-in 1;
+    animation-fill-mode: both;
+}
+
+.st4 {
+    fill: #ddd;
+    stroke: #ddd;
+    stroke-dasharray: 1800;
+    opacity: 1;
+    animation: animate3 5s ease-in 1;
+    animation-fill-mode: both;
+}
+
+.st5 {
+    fill: #F15B29;
+    stroke: #F15B29;
+    stroke-dasharray: 1800;
+    opacity: 1;
+    animation: animate4 3s ease-in 1;
+    animation-fill-mode: both;
+}
+
+@keyframes animate0 {
+    0% {
+        opacity: 0;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    40% {
+        opacity: 1;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    60% {
+        fill: rgba(102, 43, 151, 0);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(102, 43, 151, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        opacity: 0;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    40% {
+        opacity: 1;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    60% {
+        fill: rgba(18, 18, 18, 0);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(18, 18, 18, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        opacity: 0;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    40% {
+        opacity: 1;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    60% {
+        fill: rgba(77, 195, 195, 0);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(77, 195, 195, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        opacity: 0;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    40% {
+        opacity: 1;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    60% {
+        fill: rgba(221, 221, 221, 0);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(221, 221, 221, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        opacity: 0;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    40% {
+        opacity: 1;
+        fill: #fff;
+        stroke-dashoffset: 1800;
+    }
+
+    60% {
+        fill: rgba(241, 91, 41, 0);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(241, 91, 41, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #16345A;
+    padding: 0;
+    margin: 0;
+}
+
+.text-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 3em;
+    fill: transparent;
+    stroke-dasharray: 326px;
+    animation: stroke 1s linear;
+    animation-fill-mode: forwards;
+}
+
+svg text:nth-child(1) {
+    animation-delay: 0s;
+}
+
+svg text:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+svg text:nth-child(3) {
+    animation-delay: 1s;
+}
+
+svg text:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+svg text:nth-child(5) {
+    animation-delay: 2s;
+}
+
+svg text:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+svg text:nth-child(7) {
+    animation-delay: 3s;
+}
+
+svg text:nth-child(8) {
+    animation-delay: 3.5s;
+}
+
+svg text:nth-child(9) {
+    animation-delay: 4s;
+}
+
+svg text:nth-child(10) {
+    animation-delay: 4.5s;
+}
+
+svg text:nth-child(11) {
+    animation-delay: 5s;
+}
+
+svg text:nth-child(12) {
+    animation-delay: 5.5s;
+}
+
+@keyframes stroke {
+    0% {
+        stroke: #F1C164;
+        stroke-width: 3px;
+        stroke-dashoffset: 326px;
+    }
+
+    70% {
+        fill: transparent;
+    }
+
+    98% {
+        stroke: #F1C164;
+        stroke-width: 3px;
+    }
+
+    100% {
+        fill: #F1C164;
+        stroke-dashoffset: 0px;
+    }
+}
